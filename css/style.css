@@ -19,6 +19,9 @@ body{
 .navbar ul li{
     margin: 0 15px;
 }
+.active{
+    color: #20c997 !important;
+}
 .navbar ul li a{
     color: rgba(250, 250, 250, 0.9);
     font-family: 'Poppins', sans-serif;
