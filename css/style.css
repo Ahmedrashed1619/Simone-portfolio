@@ -13,46 +13,52 @@ ul{
 body{
     font-family: "Poppins", sans-serif;
 }
+
+
 /* navbar */
-.navbar{
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    padding: 20px 25px;
-    z-index: 9999;
+.navbar ul li{
+    margin: 0 15px;
+}
+.navbar ul li a{
+    color: rgba(250, 250, 250, 0.9);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.navbar ul li a:hover{
+    color: #20c997;
+}
+.bg-nav{
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .navbar img{
     height: 27px;
     cursor: pointer;
 }
-.navbar ul{
-    display: flex;
-    align-items: center;
-    margin: auto;
+.navbar .navbar-toggler{
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
 }
-.navbar ul li{
-    margin: 0 20px;
+.navbar-toggler i{
+    font-size: 23px !important;
 }
-.navbar ul li a{
-    color: rgba(250, 250, 250, 0.9);
-    font-family: 'Poppins', sans-serif;
-    transition: all 1s;
+.navbar .navbar-toggler:focus,
+ .navbar .navbar-toggler:hover
+{
+    box-shadow: none;
 }
-.navbar ul li a:hover{
-    color: #20c997;
-}
-.navbar ul li span{
-    color: #20c997;
-}
-@media screen and (max-width:992px) {
-    .navbar ul{
-        flex-direction: column;
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse .navbar-nav{
+        margin: 0 auto 1rem !important;
+        text-align: center;
     }
 }
+
 /* navbar */
+
 
 /* clicked */
 .clicked{
@@ -435,7 +441,7 @@ body{
         font-size: 22px;
     }
 }
-.container{
+.container-about{
     display: flex;
     padding: 30px 0px;
     margin: 30px 0px;
@@ -443,14 +449,14 @@ body{
     align-items: center;
     overflow: hidden;
 }
-.container .member{
+.container-about .member{
     width: 25%;
     text-align: center;
     position: relative;
     padding: 20px;
     color: #6c757d;
 }
-.container .member::before{
+.container-about .member::before{
     content: "";
     position: absolute;
     top: 0px;
@@ -468,13 +474,13 @@ body{
     line-height: 1.8;
 }
 @media screen and (max-width: 800px){
-    .container{
+    .container-about{
         flex-wrap: wrap;
     }
-    .container .member{
+    .container-about .member{
         width: 50%;
     }
-    .container .member::after{
+    .container-about .member::after{
         content: "";
         position: absolute;
         left: 0px;
@@ -1233,13 +1239,13 @@ body{
     font-size: 16px;
     border-radius: 5px;
 }
-.btn{
+.btn-message{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0px;
 }
-.btn button{
+.btn-message button{
     background-color: #20c997;
     padding: 15px 45px;
     border-radius: 30px;
@@ -1248,11 +1254,11 @@ body{
     transition: all .5s;
     box-shadow: 0px 5px 15px rgb(0 0 0 / 30%);
 }
-.btn button a{
+.btn-message button a{
     color: #fff;
     font-size: 16px;
 }
-.btn button:hover{
+.btn-message button:hover{
     background-color: #1baa80;
     border-color: #1baa80;
 }

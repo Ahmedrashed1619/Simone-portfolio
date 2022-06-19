@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Simone Personal Profile</title>
-        <meta charset = "UTF-8">
-        <meta name = "description" content="Professional Designer , Professional photographer , Professional Freelancer">
-        <meta name = "kaywords" content="Professional Designer , Professional photographer , Professional Freelancer">
+        <meta charset="UTF-8">
+        <meta name = "description" content="Personal Portfolio">
+        <meta name = "kaywords" content="Personal Portfolio">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya:wght@500&family=Inspiration&family=Lobster&family=Poppins&family=Source+Sans+Pro:wght@600;900&family=Yeseva+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <!-- fixed -->
-        <div class="navbar">
-            <img src="img/logo-light.png" alt="Simone logo">
-            <ul>
-                <li><a href="#home"> <span>Home</span> </a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#what i do">What I Do</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#client">Client</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+        <nav class="navbar navbar-expand-lg p-4 bg-nav fixed-top">
+            <div class="container">
+                <img src="img/logo-light.png" alt="Simone logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what i do">What I Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <!-- <div class="cont-nav">
+            <div class="navbar">
+                <img src="img/logo-light.png" alt="Simone logo">
+                <ul>
+                    <li><a href="#home"> <span>Home</span> </a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#what i do">What I Do</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#client">Client</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div> -->
+        
         <div class="clicked">
             <div class="con">
                 <h2>Color Switcher</h2>
@@ -84,7 +134,7 @@
                         <button><a href="#home">Download CV</a> </button>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-about">
                     <div class="member">
                         <h4> 10 +</h4>
                         <p>Years Experiance</p>
@@ -458,7 +508,7 @@
                         <div class="text">
                             <textarea name="U-text" cols="30" rows="8" placeholder="Tell us more about your needs........" required class="w-full"></textarea>
                         </div>
-                        <div class="btn">
+                        <div class="btn-message">
                             <button><a href="#about"> Send Meessage</a></button>
                         </div>
                     </div>
@@ -484,5 +534,8 @@
             </div>
         </div>
         <!-- footer  -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
